@@ -1,0 +1,44 @@
+body{
+    font-family: cursive;
+}
+
+#countries{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.country{
+    background-color: steelblue;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px 10px;
+    font-family: cursive;
+    text-align: center;
+}
+
+button{
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: tomato;
+    font-family: cursive;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+@media screen and (max-width: 768px){
+    #countries{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    #countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
